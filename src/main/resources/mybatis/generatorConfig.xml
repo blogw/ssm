@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <properties resource="config.properties"/>
+    <context id="postgre" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <jdbcConnection driverClass="${jdbc.driver}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.username}"
+                        password="${jdbc.password}">
+        </jdbcConnection>
+        <javaModelGenerator targetPackage="com.ykk.order.model" targetProject="d:/tools/mybatis"/>
+        <sqlMapGenerator targetPackage="mybatis/mapper" targetProject="d:/tools/mybatis"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ykk.order.mapper" targetProject="d:/tools/mybatis"/>
+        <table tableName="%" modelType="flat"/>
+    </context>
+</generatorConfiguration>
