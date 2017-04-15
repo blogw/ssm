@@ -21,4 +21,9 @@ public class SampleUserController extends BaseController {
         model.addAttribute("user", user);
         return "sample/index";
     }
+
+    @RequestMapping(value = "/sample/500", method = RequestMethod.GET)
+    public String error500(Model model) throws Exception {
+        throw new RuntimeException("test 500 error");
+    }
 }

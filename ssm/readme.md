@@ -44,3 +44,9 @@ http://jinnianshilongnian.iteye.com/blog/1991830
 
 加入jcl-over-slf4j可以将spring-core默认使用common-loggin（jdk的logging？）变为使用slf4j,统一为logback
 但是org.apache.tomcat，org.apache.catalina的控制不了
+
+js termianl
+http://terminal.jcubic.pl/
+
+js screen copy
+http://blog.csdn.net/maoxin604/article/details/22938453
